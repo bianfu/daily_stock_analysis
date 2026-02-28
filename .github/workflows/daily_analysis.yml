@@ -135,7 +135,10 @@ jobs:
 
           # 方式十一：Server酱3
           SERVERCHAN3_SENDKEY: ${{ secrets.SERVERCHAN3_SENDKEY }}
-
+          
+          # 合并大盘分析与个股分析
+          MERGE_EMAIL_NOTIFICATION: ${{ vars.MERGE_EMAIL_NOTIFICATION || secrets.MERGE_EMAIL_NOTIFICATION || 'false' }}
+          
           # ==========================================
           # 自选股配置
           # ==========================================
