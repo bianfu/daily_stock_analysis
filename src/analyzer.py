@@ -1100,7 +1100,7 @@ class GeminiAnalyzer:
             # 记录实际使用的 API 提供方
             api_provider = (
                 "OpenAI" if self._use_openai
-                else "gpt-4.1-free" if self._use_anthropic
+                else "Anthropic" if self._use_anthropic
                 else "Gemini"
             )
             logger.info(f"[LLM调用] 开始调用 {api_provider} API...")
